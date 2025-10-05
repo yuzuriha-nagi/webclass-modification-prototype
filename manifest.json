@@ -6,7 +6,7 @@
   "permissions": [],
   "content_scripts": [
     {
-      "matches": ["*://*.webclass.jp/*", "*://webclass.tmu.ac.jp/*", "*://webclass.edu.kct.ac.jp/*"],
+      "matches": ["*://webclass.edu.kct.ac.jp/*"],
       "css": ["styles.css"],
       "js": ["content.js"],
       "run_at": "document_start"
