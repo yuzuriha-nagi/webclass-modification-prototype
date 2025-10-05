@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "WebClass UI改善",
+  "version": "1.0.0",
+  "description": "WebClassのUIを改善するChrome拡張機能",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://*.webclass.jp/*", "*://webclass.tmu.ac.jp/*", "*://webclass.edu.kct.ac.jp/*"],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

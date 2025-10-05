@@ -1,0 +1,190 @@
+/* WebClass UI改善スタイル - ダークモダンテーマ */
+
+/* 全体の基本設定 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  background-color: #0a0a0a !important;
+  background-image: radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.05) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 80%, rgba(234, 179, 8, 0.05) 0%, transparent 50%) !important;
+  color: #e5e5e5 !important;
+  line-height: 1.6 !important;
+}
+
+/* ヘッダーの改善 */
+.webclass-improved-header,
+header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+  border-bottom: 1px solid rgba(234, 179, 8, 0.2) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+  padding: 1rem 2rem !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+/* ナビゲーションの改善 */
+.webclass-improved-nav,
+nav {
+  background-color: #1a1a1a !important;
+  border: 1px solid #2d2d2d !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+  margin: 1rem 0 !important;
+  padding: 0.5rem !important;
+}
+
+/* メインコンテンツの改善 */
+.webclass-improved-main,
+main,
+#main-content {
+  background-color: #141414 !important;
+  background-image: linear-gradient(to bottom, #141414 0%, #1a1a1a 100%) !important;
+  border: 1px solid #2d2d2d !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6) !important;
+  padding: 2rem !important;
+  margin: 1rem auto !important;
+  max-width: 1200px !important;
+}
+
+/* テーブルの改善 */
+.webclass-improved-table,
+table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100% !important;
+  background-color: #1a1a1a !important;
+  border: 1px solid #2d2d2d !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+.webclass-improved-table thead tr,
+table thead tr {
+  background: linear-gradient(135deg, #eab308 0%, #f59e0b 100%) !important;
+  color: #0a0a0a !important;
+}
+
+.webclass-improved-table th,
+table th {
+  padding: 1rem !important;
+  text-align: left !important;
+  font-weight: 600 !important;
+  color: #0a0a0a !important;
+  text-transform: uppercase !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0.5px !important;
+}
+
+.webclass-improved-table td,
+table td {
+  padding: 0.875rem 1rem !important;
+  border-bottom: 1px solid #2d2d2d !important;
+  color: #e5e5e5 !important;
+}
+
+.webclass-improved-table tbody tr:hover,
+table tbody tr:hover {
+  background-color: #252525 !important;
+  transition: background-color 0.2s ease !important;
+  cursor: pointer !important;
+}
+
+/* ボタンの改善 */
+.webclass-improved-button,
+button,
+input[type="button"],
+input[type="submit"] {
+  background: linear-gradient(135deg, #eab308 0%, #f59e0b 100%) !important;
+  color: #0a0a0a !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 0.625rem 1.5rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 12px rgba(234, 179, 8, 0.3) !important;
+  text-transform: uppercase !important;
+  font-size: 0.875rem !important;
+  letter-spacing: 0.5px !important;
+}
+
+.webclass-improved-button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(234, 179, 8, 0.5) !important;
+  background: linear-gradient(135deg, #f59e0b 0%, #eab308 100%) !important;
+}
+
+/* 入力フィールドの改善 */
+.webclass-improved-input,
+input[type="text"],
+input[type="password"],
+textarea {
+  border: 2px solid #2d2d2d !important;
+  border-radius: 8px !important;
+  padding: 0.75rem !important;
+  font-size: 0.95rem !important;
+  transition: all 0.3s ease !important;
+  background-color: #1a1a1a !important;
+  color: #e5e5e5 !important;
+}
+
+.webclass-improved-input:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #eab308 !important;
+  box-shadow: 0 0 0 3px rgba(234, 179, 8, 0.2) !important;
+  outline: none !important;
+  background-color: #141414 !important;
+}
+
+/* リンクの改善 */
+a {
+  color: #eab308 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+  font-weight: 500 !important;
+}
+
+a:hover {
+  color: #fbbf24 !important;
+  text-decoration: underline !important;
+  text-shadow: 0 0 8px rgba(234, 179, 8, 0.3) !important;
+}
+
+/* カードスタイル */
+.card,
+.content-box,
+.panel {
+  background-color: #1a1a1a !important;
+  border: 1px solid #2d2d2d !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* スクロールバーの改善 */
+::-webkit-scrollbar {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a !important;
+  border-radius: 6px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #eab308 0%, #f59e0b 100%) !important;
+  border-radius: 6px !important;
+  border: 2px solid #1a1a1a !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #f59e0b 0%, #eab308 100%) !important;
+  box-shadow: 0 0 8px rgba(234, 179, 8, 0.4) !important;
+}
