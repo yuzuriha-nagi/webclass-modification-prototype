@@ -158,18 +158,9 @@ input[type="submit"] {
   padding: 0.625rem 1.5rem !important;
   font-weight: 600 !important;
   cursor: pointer !important;
-  transition: all 0.3s ease !important;
   text-transform: uppercase !important;
   font-size: 0.875rem !important;
   letter-spacing: 0.5px !important;
-}
-
-.webclass-improved-button:hover,
-button:hover,
-input[type="button"]:hover,
-input[type="submit"]:hover {
-  background: #ffffff !important;
-  color: #000000 !important;
 }
 
 /* 入力フィールドの改善 */
@@ -226,10 +217,28 @@ a:hover {
 .courseTree-levelTitle,
 .courseList li,
 .btn-default,
+.list-group-item,
+.eve,
+.badge,
 [class*="side-block"],
 [class*="block-title"] {
   background-color: #000000 !important;
   color: #ffffff !important;
+}
+
+/* ハンバーガーメニューのアイコンバー */
+.icon-bar {
+  background-color: #ffffff !important;
+}
+
+/* モバイルメニューバッジの修正 */
+.hd-mobileMenu_badge {
+  background-color: #ff0000 !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+  padding: 0.2rem 0.5rem !important;
+  font-size: 0.75rem !important;
+  display: inline-block !important;
 }
 
 /* スクロールバーの改善 */
@@ -253,109 +262,17 @@ a:hover {
   background: #666666 !important;
 }
 
-/* 時間割カルーセル（スマホ用） */
-.timetable-carousel-container {
+/* テーブル横スクロールラッパー（スマホ用） */
+.table-scroll-wrapper {
   width: 100%;
-  overflow: hidden;
-  position: relative;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1rem;
 }
 
-.timetable-carousel {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-  width: 100%;
-}
-
-.timetable-day-card {
+.table-scroll-wrapper table {
   min-width: 100%;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-.timetable-day-header {
-  background: #000000 !important;
-  color: #ffffff !important;
-  padding: 1rem;
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 700;
-  border-radius: 12px 12px 0 0;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border: 1px solid #000000;
-  border-bottom: none;
-}
-
-.timetable-class-list {
-  background-color: #000000 !important;
-  border-radius: 0 0 12px 12px;
-  overflow: hidden;
-  border: 1px solid #000000;
-  border-top: none;
-}
-
-.timetable-class-item {
-  display: flex;
-  border-bottom: 1px solid #000000;
-  padding: 1rem;
-  transition: background-color 0.2s ease;
-}
-
-.timetable-class-item:last-child {
-  border-bottom: none;
-}
-
-.timetable-class-item:hover {
-  background-color: #1a1a1a !important;
-}
-
-.timetable-period {
-  background: #000000;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 0.9rem;
-  min-width: 60px;
-  text-align: center;
-  margin-right: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #ffffff;
-}
-
-.timetable-content {
-  flex: 1;
-  color: #ffffff;
-  font-size: 0.95rem;
-  display: flex;
-  align-items: center;
-  line-height: 1.5;
-}
-
-.timetable-dots {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 1rem;
-  margin-top: 0.5rem;
-}
-
-.timetable-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #000000;
-  border: 1px solid #ffffff;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.timetable-dot.active {
-  background: #ffffff;
-  width: 12px;
-  height: 12px;
+  width: auto;
 }
 
 /* スマホ対応 */
@@ -394,17 +311,42 @@ a:hover {
     border-radius: 8px !important;
   }
 
-  /* カルーセル内の授業内容のフォントサイズ調整 */
-  .timetable-content {
-    font-size: 0.9rem !important;
+  /* テーブルを横スクロール可能にする */
+  .table-scroll-wrapper {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
   }
 
-  .timetable-period {
-    font-size: 0.85rem !important;
-    min-width: 55px !important;
+  .table-scroll-wrapper table,
+  .webclass-improved-table {
+    display: table !important;
+    width: auto !important;
+    min-width: 600px !important;
   }
 
-  .timetable-day-header {
-    font-size: 1.1rem !important;
+  .webclass-improved-table th,
+  table th {
+    font-size: 0.75rem !important;
+    padding: 0.75rem 0.5rem !important;
+    white-space: nowrap !important;
+  }
+
+  .webclass-improved-table td,
+  table td {
+    font-size: 0.8rem !important;
+    padding: 0.625rem 0.5rem !important;
+    white-space: nowrap !important;
+  }
+
+  .webclass-improved-table tr,
+  table tr {
+    display: table-row !important;
+  }
+
+  .webclass-improved-table thead,
+  table thead,
+  .webclass-improved-table tbody,
+  table tbody {
+    display: table-row-group !important;
   }
 }

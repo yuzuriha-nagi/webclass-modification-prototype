@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "WebClass UI改善",
+  "name": "WebClass 魔改造",
   "version": "1.0.0",
   "description": "WebClassのUIを改善するChrome拡張機能",
   "permissions": [],
