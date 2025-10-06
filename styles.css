@@ -225,6 +225,7 @@ a:hover {
 .form-control,
 .courseTree-levelTitle,
 .courseList li,
+.btn-default,
 [class*="side-block"],
 [class*="block-title"] {
   background-color: #000000 !important;
