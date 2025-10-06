@@ -1,0 +1,409 @@
+/* 全体の基本設定 */
+* {
+  border-color: #000000 !important;
+}
+
+/* テーブル以外の要素の枠線を削除 */
+*:not(table):not(tr):not(td):not(th):not(.webclass-improved-table):not(
+    .timetable-period
+  ):not(.timetable-dot):not(button):not(input) {
+  border: none !important;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  line-height: 1.6 !important;
+}
+
+/* 全ての要素の文字色を白に */
+* {
+  color: #ffffff !important;
+}
+
+/* 新着メッセージのハイライト */
+[class*="new"],
+[class*="unread"],
+.notification,
+.badge {
+  color: #ff0000 !important;
+  font-weight: bold !important;
+}
+
+/* すべての要素の背景を黒に */
+div,
+section,
+article,
+aside,
+main,
+header,
+footer,
+nav {
+  background-color: #000000 !important;
+}
+
+/* テーブルの枠線 */
+table,
+tr,
+td,
+th {
+  border-color: #ffffff !important;
+  background-color: #000000 !important;
+}
+
+/* ヘッダーの改善 */
+.webclass-improved-header,
+header,
+[class*="header"],
+[id*="header"] {
+  background: #000000 !important;
+  border-bottom: 1px solid #000000 !important;
+  padding: 1rem 2rem !important;
+}
+
+/* ヘッダー内の要素の背景色のみ調整 */
+header *,
+header div,
+header section,
+header table,
+header tr,
+header td,
+header th {
+  background-color: #000000 !important;
+}
+
+/* ナビゲーションの改善 */
+.webclass-improved-nav,
+nav {
+  background-color: #000000 !important;
+  border: 1px solid #000000 !important;
+  border-radius: 12px !important;
+  margin: 1rem 0 !important;
+  padding: 0.5rem !important;
+}
+
+/* メインコンテンツの改善 */
+.webclass-improved-main,
+main,
+#main-content {
+  background-color: #000000 !important;
+  border: 1px solid #000000 !important;
+  border-radius: 16px !important;
+  padding: 0.5rem !important;
+  margin: 1rem auto !important;
+  max-width: 1200px !important;
+}
+
+/* テーブルの改善 */
+.webclass-improved-table,
+table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100% !important;
+  background-color: #000000 !important;
+  border: 1px solid #ffffff !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+.webclass-improved-table thead tr,
+table thead tr {
+  background: #000000 !important;
+  border-bottom: 2px solid #ffffff !important;
+}
+
+.webclass-improved-table th,
+table th {
+  padding: 1rem !important;
+  text-align: left !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0.5px !important;
+  background-color: #000000 !important;
+}
+
+.webclass-improved-table td,
+table td {
+  padding: 0.875rem 1rem !important;
+  border-bottom: 1px solid #ffffff !important;
+  color: #ffffff !important;
+  background-color: #000000 !important;
+}
+
+.webclass-improved-table tbody tr,
+table tbody tr {
+  background-color: #000000 !important;
+}
+
+.webclass-improved-table tbody tr:hover,
+table tbody tr:hover {
+  background-color: #1a1a1a !important;
+  transition: background-color 0.2s ease !important;
+  cursor: pointer !important;
+}
+
+/* ボタンの改善 */
+.webclass-improved-button,
+button,
+input[type="button"],
+input[type="submit"] {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  border-radius: 8px !important;
+  padding: 0.625rem 1.5rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  text-transform: uppercase !important;
+  font-size: 0.875rem !important;
+  letter-spacing: 0.5px !important;
+}
+
+.webclass-improved-button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* 入力フィールドの改善 */
+.webclass-improved-input,
+input[type="text"],
+input[type="password"],
+textarea {
+  border: 1px solid #000000 !important;
+  border-radius: 8px !important;
+  padding: 0.75rem !important;
+  font-size: 0.95rem !important;
+  transition: all 0.3s ease !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.webclass-improved-input:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #ffffff !important;
+  outline: none !important;
+  background-color: #000000 !important;
+}
+
+/* リンクの改善 */
+a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+  font-weight: 500 !important;
+}
+
+a:hover {
+  color: #e5e5e5 !important;
+  text-decoration: underline !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* カードスタイル */
+.card,
+.content-box,
+.panel {
+  background-color: #000000 !important;
+  border: 1px solid #000000 !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* サイドブロックタイトルの背景 */
+.side-block-title,
+.form-control,
+.courseTree-levelTitle,
+.courseList li,
+[class*="side-block"],
+[class*="block-title"] {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* スクロールバーの改善 */
+::-webkit-scrollbar {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000 !important;
+  border-radius: 6px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333 !important;
+  border-radius: 6px !important;
+  border: 2px solid #000000 !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666666 !important;
+}
+
+/* 時間割カルーセル（スマホ用） */
+.timetable-carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.timetable-carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.timetable-day-card {
+  min-width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.timetable-day-header {
+  background: #000000 !important;
+  color: #ffffff !important;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 12px 12px 0 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #000000;
+  border-bottom: none;
+}
+
+.timetable-class-list {
+  background-color: #000000 !important;
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
+  border: 1px solid #000000;
+  border-top: none;
+}
+
+.timetable-class-item {
+  display: flex;
+  border-bottom: 1px solid #000000;
+  padding: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.timetable-class-item:last-child {
+  border-bottom: none;
+}
+
+.timetable-class-item:hover {
+  background-color: #1a1a1a !important;
+}
+
+.timetable-period {
+  background: #000000;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  min-width: 60px;
+  text-align: center;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+}
+
+.timetable-content {
+  flex: 1;
+  color: #ffffff;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.timetable-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.timetable-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timetable-dot.active {
+  background: #ffffff;
+  width: 12px;
+  height: 12px;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 768px) {
+  /* ヘッダーのパディング調整 */
+  .webclass-improved-header,
+  header,
+  [class*="header"],
+  [id*="header"] {
+    padding: 0.75rem 1rem !important;
+  }
+
+  /* メインコンテンツのパディング調整 */
+  .webclass-improved-main,
+  main,
+  #main-content {
+    padding: 1rem !important;
+    margin: 0.5rem !important;
+    border-radius: 8px !important;
+  }
+
+  /* ボタンのサイズ調整 */
+  .webclass-improved-button,
+  button,
+  input[type="button"],
+  input[type="submit"] {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  /* カードのパディング調整 */
+  .card,
+  .content-box,
+  .panel {
+    padding: 1rem !important;
+    border-radius: 8px !important;
+  }
+
+  /* カルーセル内の授業内容のフォントサイズ調整 */
+  .timetable-content {
+    font-size: 0.9rem !important;
+  }
+
+  .timetable-period {
+    font-size: 0.85rem !important;
+    min-width: 55px !important;
+  }
+
+  .timetable-day-header {
+    font-size: 1.1rem !important;
+  }
+}
